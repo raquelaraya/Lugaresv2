@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun actualiza(user: FirebaseUser?) {
-        if (user != null) {
+        if (null != user) {
+
             val intent = Intent(this, Principal::class.java)
             startActivity(intent)
         }
